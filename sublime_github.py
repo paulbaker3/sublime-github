@@ -429,7 +429,7 @@ if git:
 
         def run(self, edit):
             if self.branch == "master":
-                branch = "master"
+                branch = "master" # Pull a default value other than master from user config
             else:
                 # Get the current remote branch--useful whether we want to link directly to that
                 # branch or to the branch's HEAD.
